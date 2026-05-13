@@ -7,7 +7,7 @@ function renderBlogGrid(containerId, options) {
   var container = document.getElementById(containerId);
   if (!container) return;
 
-  var blogs = (window.BLOGS_DATA || []).slice();
+  var blogs = (typeof BLOGS_DATA !== 'undefined' ? BLOGS_DATA : []).slice();
 
   if (cfg.category) {
     blogs = blogs.filter(function(b) { return b.category === cfg.category; });
@@ -30,7 +30,7 @@ function updateCategoryCounts() {
   ['fitness-sport','lifestyle','relaties','carriere','technologie','outdoor'].forEach(function(cat) {
     var el = document.getElementById('cat-count-' + cat);
     if (el) {
-      var n = (window.BLOGS_DATA || []).filter(function(b) { return b.category === cat; }).length;
+      var n = (typeof BLOGS_DATA !== 'undefined' ? BLOGS_DATA : []).filter(function(b) { return b.category === cat; }).length;
       el.textContent = n + (n === 1 ? ' artikel' : ' artikelen');
     }
   });
