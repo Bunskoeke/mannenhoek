@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "zwarte-overhemden-must-have-basics-voor-elke-man",
+    title: "Zwarte Overhemden: De Must-Have Basics voor Elke Man",
+    excerpt: "Zwarte overhemden zijn een tijdloze klassieker in de herengarderobe. Lees hoe je ze draagt en combineert voor een moderne, veelzijdige look.",
+    category: "lifestyle",
+    categoryLabel: "Lifestyle",
+    date: "2026-05-13",
+    dateFormatted: "13 mei 2026",
+    readTime: "6 min lezen",
+    image: "https://picsum.photos/800/400?random=955"
+  },
+  {
     slug: "grotere-biceps-krijgen-zo-bouw-je-sneller-spiermassa-op",
     title: "Grotere Biceps Krijgen? Zo Bouw Je Sneller Spiermassa op",
     excerpt: "Ontdek hoe je met gerichte oefeningen en voeding snel grotere biceps kunt bouwen. Praktische tips voor optimale spiergroei en kracht.",
