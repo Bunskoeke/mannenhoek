@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "5-onmisbare-fitness-tips-voor-de-moderne-nederlandse-man",
+    title: "5 Onmisbare Fitness Tips Voor De Moderne Nederlandse Man",
+    excerpt: "Maak je fitnessroutine effectiever met deze 5 praktische tips speciaal voor de moderne Nederlandse man.",
+    category: "fitness-sport",
+    categoryLabel: "Fitness & Sport",
+    date: "2026-05-13",
+    dateFormatted: "13 mei 2026",
+    readTime: "6 min lezen",
+    image: "https://picsum.photos/800/400?random=173"
+  },
+  {
     slug: "ochtendritueel",
     title: "Hoe Bouw Je een Sterk Ochtendritueel op in 30 Dagen",
     excerpt: "Je ochtend bepaalt je dag. Ontdek hoe je een routine opbouwt die je productiviteit en energie door het dak jaagt — zonder een uur eerder op te hoeven staan.",
