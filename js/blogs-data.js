@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "grotere-biceps-krijgen-zo-bouw-je-sneller-spiermassa-op",
+    title: "Grotere Biceps Krijgen? Zo Bouw Je Sneller Spiermassa op",
+    excerpt: "Ontdek hoe je met gerichte oefeningen en voeding snel grotere biceps kunt bouwen. Praktische tips voor optimale spiergroei en kracht.",
+    category: "fitness-sport",
+    categoryLabel: "Fitness & Sport",
+    date: "2026-05-13",
+    dateFormatted: "13 mei 2026",
+    readTime: "6 min lezen",
+    image: "https://picsum.photos/800/400?random=434"
+  },
+  {
     slug: "5-onmisbare-fitness-tips-voor-de-moderne-nederlandse-man",
     title: "5 Onmisbare Fitness Tips Voor De Moderne Nederlandse Man",
     excerpt: "Maak je fitnessroutine effectiever met deze 5 praktische tips speciaal voor de moderne Nederlandse man.",
