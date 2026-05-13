@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mannenhoek — De Plek voor de Moderne Man</title>
+  <meta name="description" content="Mannenhoek is hét platform voor de moderne man. Van fitness en lifestyle tot carrière en technologie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ─── Navigation ─── -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MANNEN<span>HOEK</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categorie/fitness-sport.html">Fitness</a></li>
+      <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+      <li><a href="categorie/relaties.html">Relaties</a></li>
+      <li><a href="categorie/carriere.html">Carrière</a></li>
+      <li><a href="categorie/technologie.html">Tech</a></li>
+      <li><a href="categorie/outdoor.html">Outdoor</a></li>
+      <li><a href="over-ons.html">Over Ons</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge">Welkom bij Mannenhoek</span>
+      <h1 class="hero__title">DE PLEK VOOR DE<br><em>MODERNE MAN</em></h1>
+      <p class="hero__sub">Van fitness en lifestyle tot carrière en technologie. Mannenhoek brengt je de beste content voor de man die vooruit wil.</p>
+      <div class="hero__buttons">
+        <a href="#latest" class="btn btn-primary">Lees de Blogs</a>
+        <a href="#categories" class="btn btn-outline">Bekijk Categorieën</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Laatste Artikelen ─── -->
+<section class="section" id="latest">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Laatste Artikelen</h2>
+      <a href="#categories" class="section-link">Alle categorieën →</a>
+    </div>
+    <div class="posts-grid" id="posts-grid"></div>
+  </div>
+</section>
+
+<!-- ─── Categorieën ─── -->
+<section class="section section--dark" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Alle Categorieën</h2>
+    </div>
+    <div class="categories-grid">
+      <a href="categorie/fitness-sport.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <div class="cat-card__info">
+          <h3>Fitness &amp; Sport</h3>
+          <p id="cat-count-fitness-sport">0 artikelen</p>
+        </div>
+      </a>
+      <a href="categorie/lifestyle.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-crown"></i></div>
+        <div class="cat-card__info">
+          <h3>Lifestyle</h3>
+          <p id="cat-count-lifestyle">0 artikelen</p>
+        </div>
+      </a>
+      <a href="categorie/relaties.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="cat-card__info">
+          <h3>Relaties &amp; Dating</h3>
+          <p id="cat-count-relaties">0 artikelen</p>
+        </div>
+      </a>
+      <a href="categorie/carriere.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="cat-card__info">
+          <h3>Carrière</h3>
+          <p id="cat-count-carriere">0 artikelen</p>
+        </div>
+      </a>
+      <a href="categorie/technologie.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-laptop"></i></div>
+        <div class="cat-card__info">
+          <h3>Technologie</h3>
+          <p id="cat-count-technologie">0 artikelen</p>
+        </div>
+      </a>
+      <a href="categorie/outdoor.html" class="cat-card">
+        <div class="cat-card__icon"><i class="fa-solid fa-mountain-sun"></i></div>
+        <div class="cat-card__info">
+          <h3>Outdoor &amp; Avontuur</h3>
+          <p id="cat-count-outdoor">0 artikelen</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Over Mannenhoek ─── -->
+<section class="section" id="over">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Over Mannenhoek</h2>
+    </div>
+    <div class="editorial">
+      <h3 class="editorial__title">Gebouwd voor Mannen die Vooruit Willen</h3>
+      <div class="editorial__text">
+        <p>Mannenhoek is opgericht met één missie: mannen voorzien van eerlijke, praktische en inspirerende content. Geen onzin, geen hypes — alleen inhoud die ertoe doet.</p>
+        <p>Of je nu wilt groeien in je carrière, sterker wilt worden in de sportschool, betere relaties wilt opbouwen of gewoon de nieuwste tech wil ontdekken — bij Mannenhoek vind je wat je zoekt. Geschreven door mannen, voor mannen.</p>
+        <p>Ben je een bedrijf dat de moderne Nederlandse man wil bereiken? Ons platform biedt gerichte en kwalitatieve plaatsing van gesponsorde content en gastblogs. Neem contact op en ontdek de mogelijkheden.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Gastblog CTA ─── -->
+<section class="section section--dark" id="gastblog">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2 class="cta-banner__title">Bereik de Moderne Nederlandse Man</h2>
+        <p class="cta-banner__sub">Plaats een gastblog en zet jouw merk in de spotlight bij duizenden betrokken lezers.</p>
+      </div>
+      <a href="mailto:info@mannenhoek.nl" class="btn btn-white">Neem Contact Op</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">MANNEN<span>HOEK</span></div>
+        <p class="footer__brand-desc">De plek voor de moderne Nederlandse man. Van fitness tot carrière, van tech tot lifestyle — wij hebben het voor je.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Categorieën</p>
+        <ul class="footer__links">
+          <li><a href="categorie/fitness-sport.html">Fitness &amp; Sport</a></li>
+          <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+          <li><a href="categorie/relaties.html">Relaties</a></li>
+          <li><a href="categorie/carriere.html">Carrière</a></li>
+          <li><a href="categorie/technologie.html">Technologie</a></li>
+          <li><a href="categorie/outdoor.html">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Platform</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#over">Over Ons</a></li>
+          <li><a href="#gastblog">Gastblog Plaatsen</a></li>
+          <li><a href="#">Adverteren</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Juridisch</p>
+        <ul class="footer__links">
+          <li><a href="#">Privacybeleid</a></li>
+          <li><a href="#">Cookiebeleid</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mannenhoek.nl — Alle rechten voorbehouden</p>
+      <p>Gemaakt met passie voor de moderne man</p>
+    </div>
+  </div>
+</footer>
+
+<script>window.BLOG_PATH_PREFIX = '';</script>
+<script src="js/blogs-data.js"></script>
+<script src="js/blog-renderer.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderBlogGrid('posts-grid', { limit: 5 });
+  updateCategoryCounts();
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrière — Mannenhoek</title>
+  <meta name="description" content="Carrièretips voor mannen: salaris onderhandelen, leiderschap, netwerken en meer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="../index.html" class="nav__logo">MANNEN<span>HOEK</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="fitness-sport.html">Fitness</a></li>
+      <li><a href="lifestyle.html">Lifestyle</a></li>
+      <li><a href="relaties.html">Relaties</a></li>
+      <li><a href="carriere.html">Carrière</a></li>
+      <li><a href="technologie.html">Tech</a></li>
+      <li><a href="outdoor.html">Outdoor</a></li>
+      <li><a href="../over-ons.html">Over Ons</a></li>
+      <li><a href="../contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="cat-hero" style="background-image: url('https://picsum.photos/1400/600?random=83');">
+  <div class="cat-hero__overlay"></div>
+  <div class="container">
+    <h1 class="cat-hero__title">Carrière</h1>
+    <p class="cat-hero__desc">Groei in je werk, verdien wat je waard bent en word de leider die je altijd wilde zijn. Praktisch carrièreadvies zonder omhaal.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Alle Artikelen</h2>
+    </div>
+    <div class="posts-grid" id="cat-grid"></div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="editorial">
+      <h3 class="editorial__title">Jouw Carrière, Jouw Regels</h3>
+      <div class="editorial__text">
+        <p>Of je nu de ladder wilt beklimmen, een eigen bedrijf wilt starten of gewoon meer wilt verdienen voor wat je doet — Mannenhoek heeft de carrièrecontent die je daadwerkelijk verder helpt. Geen vage managementtaal, maar praktisch advies dat werkt.</p>
+        <p>We behandelen onderwerpen als salarisonderhandeling, leiderschap, netwerken, ondernemerschap en persoonlijke effectiviteit op de werkvloer. Allemaal geschreven vanuit de realiteit van de werkende man.</p>
+        <p>Bied je HR-diensten, coaching, trainingen of werkgerelateerde producten aan? Bereik ambitieuze mannen via gesponsorde content op onze carrière-pagina's.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">MANNEN<span>HOEK</span></div>
+        <p class="footer__brand-desc">De plek voor de moderne Nederlandse man. Van fitness tot carrière, van tech tot lifestyle.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Categorieën</p>
+        <ul class="footer__links">
+          <li><a href="fitness-sport.html">Fitness &amp; Sport</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="relaties.html">Relaties</a></li>
+          <li><a href="carriere.html">Carrière</a></li>
+          <li><a href="technologie.html">Technologie</a></li>
+          <li><a href="outdoor.html">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Platform</p>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#over">Over Ons</a></li>
+          <li><a href="../index.html#gastblog">Gastblog Plaatsen</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Juridisch</p>
+        <ul class="footer__links">
+          <li><a href="#">Privacybeleid</a></li>
+          <li><a href="#">Cookiebeleid</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mannenhoek.nl — Alle rechten voorbehouden</p>
+      <p>Gemaakt met passie voor de moderne man</p>
+    </div>
+  </div>
+</footer>
+
+<script>window.BLOG_PATH_PREFIX = '../';</script>
+<script src="../js/blogs-data.js"></script>
+<script src="../js/blog-renderer.js"></script>
+<script src="../js/main.js"></script>
+<script>renderBlogGrid('cat-grid', { category: 'carriere' });</script>
+</body>
+</html>

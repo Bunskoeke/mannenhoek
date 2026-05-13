@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over Ons — Mannenhoek</title>
+  <meta name="description" content="Leer ons kennen. Mannenhoek is het platform voor de moderne Nederlandse man — opgericht uit passie, geschreven met eerlijkheid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-hero {
+      position: relative;
+      height: 480px;
+      overflow: hidden;
+    }
+    .about-hero img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .about-hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%);
+    }
+    .about-hero__content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 48px 0;
+    }
+    .about-hero__title {
+      font-family: var(--fh);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .about-hero__sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+    }
+
+    /* Mission */
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .mission-text h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--white);
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      position: relative;
+    }
+    .mission-text h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 44px; height: 3px;
+      background: var(--accent);
+    }
+    .mission-text p {
+      font-size: 1rem;
+      color: var(--gray-1);
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+    .mission-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--gray-3);
+    }
+    .mission-image img {
+      width: 100%; height: 380px; object-fit: cover;
+      display: block;
+    }
+
+    /* Values */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .value-card {
+      background: var(--bg-3);
+      border: 1px solid var(--gray-3);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: border-color var(--ease), transform var(--ease);
+    }
+    .value-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+    .value-card__icon {
+      font-size: 1.6rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .value-card h3 {
+      font-size: 1.05rem;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .value-card p {
+      font-size: 0.875rem;
+      color: var(--gray-1);
+      line-height: 1.7;
+      font-family: var(--fb);
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 400;
+    }
+
+    /* Team */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .team-card {
+      background: var(--bg-3);
+      border: 1px solid var(--gray-3);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-align: center;
+    }
+    .team-card img {
+      width: 100%; height: 240px; object-fit: cover;
+    }
+    .team-card__body { padding: 24px 20px; }
+    .team-card__name {
+      font-family: var(--fh);
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .team-card__role {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-family: var(--fh);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .team-card__bio {
+      font-size: 0.875rem;
+      color: var(--gray-1);
+      line-height: 1.65;
+    }
+
+    /* Stats */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .stat__number {
+      font-family: var(--fh);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--accent);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .stat__label {
+      font-size: 0.875rem;
+      color: var(--gray-1);
+    }
+
+    @media (max-width: 768px) {
+      .mission-grid { grid-template-columns: 1fr; gap: 40px; }
+      .values-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .about-hero { height: 360px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MANNEN<span>HOEK</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categorie/fitness-sport.html">Fitness</a></li>
+      <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+      <li><a href="categorie/relaties.html">Relaties</a></li>
+      <li><a href="categorie/carriere.html">Carrière</a></li>
+      <li><a href="categorie/technologie.html">Tech</a></li>
+      <li><a href="categorie/outdoor.html">Outdoor</a></li>
+      <li><a href="over-ons.html">Over Ons</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="about-hero">
+  <img src="https://picsum.photos/1400/600?random=90" alt="Over Mannenhoek">
+  <div class="about-hero__overlay"></div>
+  <div class="about-hero__content">
+    <div class="container">
+      <h1 class="about-hero__title">Over Mannenhoek</h1>
+      <p class="about-hero__sub">Opgericht uit passie voor eerlijke content. Geschreven door mannen, voor mannen die vooruit willen.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Missie -->
+<section class="section">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-text">
+        <h2>Onze Missie</h2>
+        <p>Mannenhoek is ontstaan vanuit een simpele observatie: er was geen Nederlandse website die de moderne man serieus nam. Geen platform dat praktisch, eerlijk en zonder hype schreef over de dingen die er echt toe doen in het leven van een man.</p>
+        <p>Dat hebben wij veranderd. Bij Mannenhoek schrijven we over fitness, lifestyle, relaties, carrière, technologie en outdoor — en we doen dat zonder omhaal. Geen clickbait, geen vage adviezen, geen content die enkel geschreven is voor zoekmachines.</p>
+        <p>Ons platform groeit elke maand. Duizenden Nederlandse mannen lezen Mannenhoek wekelijks voor content die hen verder helpt. We zijn trots op die gemeenschap en blijven investeren in kwaliteit.</p>
+      </div>
+      <div class="mission-image">
+        <img src="https://picsum.photos/700/500?random=91" alt="Mannenhoek team">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-header" style="justify-content: center; text-align: center;">
+      <h2 class="section-title" style="margin: 0 auto;">Mannenhoek in Cijfers</h2>
+    </div>
+    <div class="stats-row">
+      <div>
+        <span class="stat__number">25K+</span>
+        <p class="stat__label">Maandelijkse lezers</p>
+      </div>
+      <div>
+        <span class="stat__number">6</span>
+        <p class="stat__label">Categorieën</p>
+      </div>
+      <div>
+        <span class="stat__number">100+</span>
+        <p class="stat__label">Gepubliceerde artikelen</p>
+      </div>
+      <div>
+        <span class="stat__number">4.8</span>
+        <p class="stat__label">Gemiddelde lezer waardering</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Onze Waarden -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Waar We Voor Staan</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Eerlijkheid boven alles</h3>
+        <p>We schrijven wat we denken, niet wat merken willen horen. Gesponsorde content wordt altijd duidelijk aangegeven — transparantie is niet onderhandelbaar.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Praktisch en direct</h3>
+        <p>Geen vage adviezen of eindeloze inleidingen. Elk artikel geeft je iets wat je vandaag nog kunt toepassen. Jouw tijd is waardevol — wij respecteren dat.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Gemeenschap eerst</h3>
+        <p>Mannenhoek is meer dan een website. Het is een gemeenschap van mannen die willen groeien. Die lezer staat centraal in alles wat we doen.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-star"></i></div>
+        <h3>Kwaliteit boven kwantiteit</h3>
+        <p>Liever één sterk artikel per week dan vijf middelmatige. We nemen de tijd om onderwerpen goed uit te diepen en correcte informatie te leveren.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Geen onzin</h3>
+        <p>We volgen geen trends die nergens op slaan en we doen niet mee aan hypes. Als wij ergens over schrijven, geloven we er ook in.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-card__icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <h3>Altijd in beweging</h3>
+        <p>We verbeteren continu. Nieuwe categorieën, betere content, meer diepgang — Mannenhoek staat nooit stil, net als onze lezers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Het Team</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://picsum.photos/400/300?random=92" alt="Redacteur">
+        <div class="team-card__body">
+          <p class="team-card__name">Tim van der Berg</p>
+          <p class="team-card__role">Oprichter &amp; Hoofdredacteur</p>
+          <p class="team-card__bio">Sportliefhebber, ondernemer en schrijver. Tim startte Mannenhoek omdat hij miste wat hij zelf zocht: eerlijke content voor de moderne man.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://picsum.photos/400/300?random=93" alt="Auteur">
+        <div class="team-card__body">
+          <p class="team-card__name">Joost Hendriksen</p>
+          <p class="team-card__role">Redacteur Fitness &amp; Sport</p>
+          <p class="team-card__bio">Personal trainer met 10 jaar ervaring. Joost schrijft over krachttraining, voeding en herstel vanuit zijn dagelijkse praktijk.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="https://picsum.photos/400/300?random=94" alt="Auteur">
+        <div class="team-card__body">
+          <p class="team-card__name">Lars Visser</p>
+          <p class="team-card__role">Redacteur Carrière &amp; Tech</p>
+          <p class="team-card__bio">Voormalig consultant, nu fulltime schrijver. Lars deelt zijn ervaringen over carrièregroei, ondernemerschap en de nieuwste technologie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2 class="cta-banner__title">Wil Je Meewerken aan Mannenhoek?</h2>
+        <p class="cta-banner__sub">Schrijf een gastblog, adverteer op ons platform of start een samenwerking. We horen graag van je.</p>
+      </div>
+      <a href="contact.html" class="btn btn-white">Neem Contact Op</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">MANNEN<span>HOEK</span></div>
+        <p class="footer__brand-desc">De plek voor de moderne Nederlandse man. Van fitness tot carrière, van tech tot lifestyle.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Categorieën</p>
+        <ul class="footer__links">
+          <li><a href="categorie/fitness-sport.html">Fitness &amp; Sport</a></li>
+          <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+          <li><a href="categorie/relaties.html">Relaties</a></li>
+          <li><a href="categorie/carriere.html">Carrière</a></li>
+          <li><a href="categorie/technologie.html">Technologie</a></li>
+          <li><a href="categorie/outdoor.html">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Platform</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over Ons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#gastblog">Gastblog Plaatsen</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Juridisch</p>
+        <ul class="footer__links">
+          <li><a href="#">Privacybeleid</a></li>
+          <li><a href="#">Cookiebeleid</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mannenhoek.nl — Alle rechten voorbehouden</p>
+      <p>Gemaakt met passie voor de moderne man</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

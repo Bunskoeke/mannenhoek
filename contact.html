@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Opnemen — Mannenhoek</title>
+  <meta name="description" content="Neem contact op met Mannenhoek voor gastblogs, adverteren, samenwerkingen of algemene vragen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Contact hero */
+    .contact-hero {
+      position: relative;
+      height: 380px;
+      overflow: hidden;
+    }
+    .contact-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .contact-hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%);
+    }
+    .contact-hero__content {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 48px 0;
+    }
+    .contact-hero__title {
+      font-family: var(--fh);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .contact-hero__sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* Contact layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* Form */
+    .contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label {
+      font-family: var(--fh);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--bg-3);
+      border: 1px solid var(--gray-3);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-family: var(--fb);
+      font-size: 0.95rem;
+      color: var(--white);
+      outline: none;
+      transition: border-color var(--ease);
+      width: 100%;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--gray-2);
+    }
+    .form-group select option { background: var(--bg-3); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+    .form-group textarea { resize: vertical; min-height: 160px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    .form-submit {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--gray-2);
+    }
+
+    /* Sidebar */
+    .contact-sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+    .info-card {
+      background: var(--bg-3);
+      border: 1px solid var(--gray-3);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .info-card__title {
+      font-family: var(--fh);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .info-item:last-child { margin-bottom: 0; }
+    .info-item__icon {
+      color: var(--accent);
+      font-size: 1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 18px;
+    }
+    .info-item__label {
+      font-family: var(--fh);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gray-2);
+      margin-bottom: 4px;
+    }
+    .info-item__value {
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+    .info-item__value a {
+      color: var(--accent);
+      transition: color var(--ease);
+    }
+    .info-item__value a:hover { color: var(--accent-h); }
+
+    /* Gastblog packages */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .package-card {
+      background: var(--bg-3);
+      border: 1px solid var(--gray-3);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      transition: border-color var(--ease), transform var(--ease);
+      position: relative;
+    }
+    .package-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .package-card--featured {
+      border-color: var(--accent);
+      background: rgba(255,107,0,0.06);
+    }
+    .package-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--white);
+      font-family: var(--fh);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .package-name {
+      font-family: var(--fh);
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .package-price {
+      font-family: var(--fh);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .package-price span { font-size: 1rem; color: var(--gray-2); }
+    .package-features {
+      list-style: none;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .package-features li {
+      font-size: 0.85rem;
+      color: var(--gray-1);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--gray-3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .package-features li:last-child { border-bottom: none; }
+    .package-features li i { color: var(--accent); font-size: 0.75rem; flex-shrink: 0; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--gray-3);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--gray-3); }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      cursor: pointer;
+      font-family: var(--fh);
+      font-size: 1rem;
+      color: var(--white);
+      gap: 16px;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .faq-question i {
+      color: var(--accent);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      transition: transform var(--ease);
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 0 20px;
+      font-size: 0.95rem;
+      color: var(--gray-1);
+      line-height: 1.8;
+    }
+    .faq-item.is-open .faq-question i { transform: rotate(180deg); }
+    .faq-item.is-open .faq-answer { display: block; }
+
+    @media (max-width: 1024px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .packages-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .form-row { grid-template-columns: 1fr; }
+      .contact-hero { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">MANNEN<span>HOEK</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categorie/fitness-sport.html">Fitness</a></li>
+      <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+      <li><a href="categorie/relaties.html">Relaties</a></li>
+      <li><a href="categorie/carriere.html">Carrière</a></li>
+      <li><a href="categorie/technologie.html">Tech</a></li>
+      <li><a href="categorie/outdoor.html">Outdoor</a></li>
+      <li><a href="over-ons.html">Over Ons</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="contact-hero">
+  <img src="https://picsum.photos/1400/500?random=95" alt="Contact Mannenhoek">
+  <div class="contact-hero__overlay"></div>
+  <div class="contact-hero__content">
+    <div class="container">
+      <h1 class="contact-hero__title">Neem Contact Op</h1>
+      <p class="contact-hero__sub">Vragen, samenwerkingen of een gastblog plaatsen? We horen graag van je.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact formulier + sidebar -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Formulier -->
+      <div>
+        <div class="section-header" style="margin-bottom: 32px;">
+          <h2 class="section-title">Stuur een Bericht</h2>
+        </div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="naam">Naam *</label>
+              <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+            </div>
+            <div class="form-group">
+              <label for="bedrijf">Bedrijf</label>
+              <input type="text" id="bedrijf" name="bedrijf" placeholder="Jouw bedrijf (optioneel)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres *</label>
+            <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+          </div>
+          <div class="form-group">
+            <label for="onderwerp">Onderwerp *</label>
+            <select id="onderwerp" name="onderwerp" required>
+              <option value="" disabled selected>Kies een onderwerp</option>
+              <option value="gastblog">Gastblog Plaatsen</option>
+              <option value="adverteren">Adverteren</option>
+              <option value="samenwerking">Samenwerking / Partnership</option>
+              <option value="redactioneel">Redactionele vraag</option>
+              <option value="anders">Anders</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bericht">Bericht *</label>
+            <textarea id="bericht" name="bericht" placeholder="Vertel ons wat je in gedachten hebt..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>
+              Verstuur Bericht
+            </button>
+            <p class="form-note">We reageren binnen 2 werkdagen.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <div class="info-card">
+          <p class="info-card__title">Contactgegevens</p>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope info-item__icon"></i>
+            <div>
+              <p class="info-item__label">E-mail</p>
+              <p class="info-item__value"><a href="mailto:info@mannenhoek.nl">info@mannenhoek.nl</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-clock info-item__icon"></i>
+            <div>
+              <p class="info-item__label">Reactietijd</p>
+              <p class="info-item__value">Binnen 2 werkdagen</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot info-item__icon"></i>
+            <div>
+              <p class="info-item__label">Gevestigd in</p>
+              <p class="info-item__value">Nederland</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <p class="info-card__title">Volg Ons</p>
+          <div class="info-item">
+            <i class="fa-brands fa-instagram info-item__icon"></i>
+            <div>
+              <p class="info-item__label">Instagram</p>
+              <p class="info-item__value"><a href="#">@mannenhoek</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-brands fa-linkedin info-item__icon"></i>
+            <div>
+              <p class="info-item__label">LinkedIn</p>
+              <p class="info-item__value"><a href="#">Mannenhoek.nl</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-brands fa-tiktok info-item__icon"></i>
+            <div>
+              <p class="info-item__label">TikTok</p>
+              <p class="info-item__value"><a href="#">@mannenhoek</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card" style="border-color: var(--accent); background: rgba(255,107,0,0.05);">
+          <p class="info-card__title">Snel Antwoord Nodig?</p>
+          <p style="font-size: 0.875rem; color: var(--gray-1); line-height: 1.7; margin-bottom: 16px;">
+            Voor gastblogs en commercial partnerships mailen we het snelst terug. Stuur je voorstel direct naar <a href="mailto:gastblog@mannenhoek.nl" style="color: var(--accent);">gastblog@mannenhoek.nl</a> voor de kortste doorlooptijd.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gastblog Pakketten -->
+<section class="section section--dark" id="pakketten">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Gastblog Pakketten</h2>
+    </div>
+    <p style="color: var(--gray-1); margin-bottom: 40px; max-width: 600px;">Bereik duizenden actieve, betrokken Nederlandse mannen via onze platformen. Kies het pakket dat past bij jouw doel en budget.</p>
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <p class="package-name">Starter</p>
+        <p class="package-price">Op aanvraag<span></span></p>
+        <ul class="package-features">
+          <li><i class="fa-solid fa-check"></i> 1 gastblog artikel</li>
+          <li><i class="fa-solid fa-check"></i> Plaatsing in relevante categorie</li>
+          <li><i class="fa-solid fa-check"></i> 1 do-follow backlink</li>
+          <li><i class="fa-solid fa-check"></i> Socialmedia-vermelding</li>
+          <li><i class="fa-solid fa-check"></i> 30 dagen online</li>
+        </ul>
+        <a href="mailto:gastblog@mannenhoek.nl" class="btn btn-outline" style="width: 100%; justify-content: center;">Offerte Aanvragen</a>
+      </div>
+
+      <div class="package-card package-card--featured">
+        <span class="package-badge">Meest Gekozen</span>
+        <p class="package-name">Pro</p>
+        <p class="package-price">Op aanvraag<span></span></p>
+        <ul class="package-features">
+          <li><i class="fa-solid fa-check"></i> 1 premium gastblog artikel</li>
+          <li><i class="fa-solid fa-check"></i> Uitgelicht op homepage</li>
+          <li><i class="fa-solid fa-check"></i> 2 do-follow backlinks</li>
+          <li><i class="fa-solid fa-check"></i> Nieuwsbriefvermelding</li>
+          <li><i class="fa-solid fa-check"></i> Socialmedia-campagne</li>
+          <li><i class="fa-solid fa-check"></i> Permanent online</li>
+        </ul>
+        <a href="mailto:gastblog@mannenhoek.nl" class="btn btn-primary" style="width: 100%; justify-content: center;">Offerte Aanvragen</a>
+      </div>
+
+      <div class="package-card">
+        <p class="package-name">Partner</p>
+        <p class="package-price">Op aanvraag<span></span></p>
+        <ul class="package-features">
+          <li><i class="fa-solid fa-check"></i> 4 gastblog artikelen / maand</li>
+          <li><i class="fa-solid fa-check"></i> Vaste bannerpositie</li>
+          <li><i class="fa-solid fa-check"></i> Onbeperkte backlinks</li>
+          <li><i class="fa-solid fa-check"></i> Maandelijkse nieuwsbrief</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated socialmedia-content</li>
+          <li><i class="fa-solid fa-check"></i> Maandelijkse rapportage</li>
+        </ul>
+        <a href="mailto:gastblog@mannenhoek.nl" class="btn btn-outline" style="width: 100%; justify-content: center;">Offerte Aanvragen</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width: 760px;">
+    <div class="section-header">
+      <h2 class="section-title">Veelgestelde Vragen</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          Hoe lang duurt het voordat mijn gastblog online staat?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">Na akkoord op de offerte en ontvangst van de content plaatsen we het artikel binnen 3-5 werkdagen. Bij het Pro- en Partnerpakket bespreken we een exacte publicatiedatum.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Schrijven jullie de content zelf of lever ik die aan?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">Beide opties zijn mogelijk. Je kunt eigen content aanleveren die wij eventueel redigeren, of we schrijven het artikel voor jou op basis van jouw briefing. Schrijven door ons is een betaalde meerservice.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Welke eisen stellen jullie aan gastblog content?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">Content moet origineel zijn, minimaal 600 woorden bevatten en aansluiten bij onze doelgroep (Nederlandse mannen, 25-45 jaar). Puur promotionele teksten zonder informatieve waarde worden niet geplaatst. Gesponsorde content wordt altijd duidelijk als zodanig aangegeven.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Kan ik een gastblog laten verwijderen na plaatsing?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">Bij het Starter-pakket is het artikel 30 dagen online. Daarna verwijderen we het op verzoek. Pro- en Partnercontent is permanent online tenzij anders overeengekomen.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Welke statistieken ontvang ik na plaatsing?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">Partnerpakketten ontvangen maandelijkse rapportages met paginaweergaven, gemiddelde leestijd en klikken op links. Voor Starter en Pro zijn basisstatistieken op aanvraag beschikbaar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">MANNEN<span>HOEK</span></div>
+        <p class="footer__brand-desc">De plek voor de moderne Nederlandse man. Van fitness tot carrière, van tech tot lifestyle.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Categorieën</p>
+        <ul class="footer__links">
+          <li><a href="categorie/fitness-sport.html">Fitness &amp; Sport</a></li>
+          <li><a href="categorie/lifestyle.html">Lifestyle</a></li>
+          <li><a href="categorie/relaties.html">Relaties</a></li>
+          <li><a href="categorie/carriere.html">Carrière</a></li>
+          <li><a href="categorie/technologie.html">Technologie</a></li>
+          <li><a href="categorie/outdoor.html">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Platform</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over Ons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#gastblog">Gastblog Plaatsen</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Juridisch</p>
+        <ul class="footer__links">
+          <li><a href="#">Privacybeleid</a></li>
+          <li><a href="#">Cookiebeleid</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mannenhoek.nl — Alle rechten voorbehouden</p>
+      <p>Gemaakt met passie voor de moderne man</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('is-open'));
+      if (!isOpen) item.classList.add('is-open');
+    });
+  });
+</script>
+</body>
+</html>
