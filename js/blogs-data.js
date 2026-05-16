@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "grotere-biceps-zo-bouw-jij-echt-omvang-en-kracht-op",
+    title: "Grotere biceps: Zo bouw jij echt omvang en kracht op",
+    excerpt: "Wil jij grotere biceps? Lees hier de beste oefeningen, voedingstips en trainingsstrategieën voor explosieve groei en meer kracht.",
+    category: "fitness-sport",
+    categoryLabel: "Fitness & Sport",
+    date: "2026-05-16",
+    dateFormatted: "16 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/grotere-biceps-zo-bouw-jij-echt-omvang-en-kracht-op.jpg"
+  },
+  {
     slug: "grotere-biceps-krijgen-zo-train-je-efficient-en-resultaatgericht",
     title: "Grotere Biceps Krijgen? Zo Train Je Efficiënt en Resultaatgericht",
     excerpt: "Wil je grotere biceps? Lees onze praktische gids met effectieve oefeningen, trainingsadviezen en voedingstips voor meer spiermassa en kracht.",
