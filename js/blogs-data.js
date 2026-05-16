@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-zijn-de-spelregels-van-padel",
+    title: "Wat zijn de spelregels van Padel? Alles wat je moet weten om te scoren",
+    excerpt: "Padel is populair en makkelijk te leren. Met deze spelregels weet jij precies hoe het werkt, van serve tot punt scoren.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-16",
+    dateFormatted: "16 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/wat-zijn-de-spelregels-van-padel.jpg"
+  },
+  {
     slug: "wat-is-het-verschil-tussen-een-rond-padelracket-en-een-diamond-shape-padelracket",
     title: "Wat is het verschil tussen een rond padelracket en een diamond shape padelracket?",
     excerpt: "Rond of diamond shape padelracket? Ontdek wat het verschil is en welk racket beter past bij jouw stijl en niveau.",
