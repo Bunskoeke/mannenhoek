@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "grotere-biceps-krijgen-zo-train-je-efficient-en-resultaatgericht",
+    title: "Grotere Biceps Krijgen? Zo Train Je Efficiënt en Resultaatgericht",
+    excerpt: "Wil je grotere biceps? Lees onze praktische gids met effectieve oefeningen, trainingsadviezen en voedingstips voor meer spiermassa en kracht.",
+    category: "fitness-sport",
+    categoryLabel: "Fitness & Sport",
+    date: "2026-05-16",
+    dateFormatted: "16 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/grotere-biceps-krijgen-zo-train-je-efficient-en-resultaatgericht.jpg"
+  },
+  {
     slug: "zwarte-overhemden-must-have-basics-voor-elke-man",
     title: "Zwarte Overhemden: De Must-Have Basics voor Elke Man",
     excerpt: "Zwarte overhemden zijn een tijdloze klassieker in de herengarderobe. Lees hoe je ze draagt en combineert voor een moderne, veelzijdige look.",
