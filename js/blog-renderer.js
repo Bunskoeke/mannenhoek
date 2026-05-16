@@ -27,7 +27,7 @@ function renderBlogGrid(containerId, options) {
 }
 
 function updateCategoryCounts() {
-  ['fitness-sport','lifestyle','relaties','carriere','technologie','outdoor'].forEach(function(cat) {
+  ['sporten','lifestyle','relatie','carriere','tech','koken','overig'].forEach(function(cat) {
     var el = document.getElementById('cat-count-' + cat);
     if (el) {
       var n = (typeof BLOGS_DATA !== 'undefined' ? BLOGS_DATA : []).filter(function(b) { return b.category === cat; }).length;
