@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-is-het-verschil-tussen-een-tennisbal-en-een-padelbal",
+    title: "Wat is het verschil tussen een tennisbal en een padelbal?",
+    excerpt: "Tennis- en padelballen lijken op elkaar, maar ze verschillen op belangrijke punten als druk, maat en speeleigenschappen. Wat maakt ze uniek?",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-16",
+    dateFormatted: "16 mei 2026",
+    readTime: "6 min lezen",
+    image: "/images/blog/wat-is-het-verschil-tussen-een-tennisbal-en-een-padelbal.jpg"
+  },
+  {
     slug: "grotere-biceps-zo-bouw-jij-echt-omvang-en-kracht-op",
     title: "Grotere biceps: Zo bouw jij echt omvang en kracht op",
     excerpt: "Wil jij grotere biceps? Lees hier de beste oefeningen, voedingstips en trainingsstrategieën voor explosieve groei en meer kracht.",
