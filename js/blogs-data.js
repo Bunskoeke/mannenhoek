@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-is-het-verschil-tussen-een-rond-padelracket-en-een-diamond-shape-padelracket",
+    title: "Wat is het verschil tussen een rond padelracket en een diamond shape padelracket?",
+    excerpt: "Rond of diamond shape padelracket? Ontdek wat het verschil is en welk racket beter past bij jouw stijl en niveau.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-16",
+    dateFormatted: "16 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/wat-is-het-verschil-tussen-een-rond-padelracket-en-een-diamond-shape-padelracket.jpg"
+  },
+  {
     slug: "wat-is-het-verschil-tussen-een-tennisbal-en-een-padelbal",
     title: "Wat is het verschil tussen een tennisbal en een padelbal?",
     excerpt: "Tennis- en padelballen lijken op elkaar, maar ze verschillen op belangrijke punten als druk, maat en speeleigenschappen. Wat maakt ze uniek?",
