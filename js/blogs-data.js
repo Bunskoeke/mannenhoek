@@ -5,4 +5,70 @@
 // ============================================================
 
 const BLOGS_DATA = [
+  {
+    slug: "wat-zijn-de-beste-datingapps-in-2026",
+    title: "Wat zijn de beste datingapps in 2026? Dit zijn jouw winners!",
+    excerpt: "Wil je weten wat de beste datingapps in 2026 zijn? We bespreken de apps die je écht verder helpen, zonder gedoe.",
+    category: "lifestyle",
+    categoryLabel: "Lifestyle",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/wat-zijn-de-beste-datingapps-in-2026.jpg"
+  },
+  {
+    slug: "beste-positie-rechtshandige-speler-padel",
+    title: "Wat is de beste positie voor een rechtshandige speler met Padel?",
+    excerpt: "Welke positie past het beste bij jou als rechtshandige padelspeler? Check handige tips en tactiek om meer te scoren op de baan.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "6 min lezen",
+    image: "/images/blog/beste-positie-rechtshandige-speler-padel.jpg"
+  },
+  {
+    slug: "beste-positie-linkshandige-speler-padel",
+    title: "Wat is de beste positie voor een linkshandige speler met Padel?",
+    excerpt: "Linkshandig en padel spelen? Dit is de beste positie om optimaal te profiteren van je unieke slag en je tegenstanders te verrassen.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/beste-positie-linkshandige-speler-padel.jpg"
+  },
+  {
+    slug: "wat-zijn-de-spelregels-van-padel",
+    title: "Wat zijn de spelregels van Padel? Alles wat je moet weten om te starten",
+    excerpt: "Benieuwd naar wat de spelregels van padel zijn? We leggen overzichtelijk uit hoe je scoort, serveert en het potje wint.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "6 min lezen",
+    image: "/images/blog/wat-zijn-de-spelregels-van-padel.jpg"
+  },
+  {
+    slug: "wat-is-verschil-rond-padelracket-diamond-shape-padelracket",
+    title: "Wat is het verschil tussen een rond padelracket en een diamond shape padelracket?",
+    excerpt: "Rond of diamond shape padelracket? Leer de verschillen en vind jouw ideale racket voor meer power of controle op de baan.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/wat-is-verschil-rond-padelracket-diamond-shape-padelracket.jpg"
+  },
+  {
+    slug: "wat-is-het-verschil-tussen-een-tennisbal-en-een-padelbal",
+    title: "Wat is het verschil tussen een tennisbal en een padelbal?",
+    excerpt: "Tennisbal of padelbal, ze lijken op elkaar maar verschillen behoorlijk. Wat maakt ze anders? Hier leg ik het je simpel uit.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "6 min lezen",
+    image: "/images/blog/wat-is-het-verschil-tussen-een-tennisbal-en-een-padelbal.jpg"
+  },
 ];
