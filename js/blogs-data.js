@@ -5,4 +5,8 @@
 // ============================================================
 
 const BLOGS_DATA = [
+<<<<<<< Updated upstream
+=======
+  // N8N voegt hier automatisch nieuwe blogs toe
+>>>>>>> Stashed changes
 ];
