@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "beste-positie-linkshandige-speler-padel",
+    title: "Wat is de beste positie voor een linkshandige speler met Padel?",
+    excerpt: "Linkshandig en padel spelen? Dit is de beste positie om optimaal te profiteren van je unieke slag en je tegenstanders te verrassen.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/beste-positie-linkshandige-speler-padel.jpg"
+  },
+  {
     slug: "wat-zijn-de-spelregels-van-padel",
     title: "Wat zijn de spelregels van Padel? Alles wat je moet weten om te starten",
     excerpt: "Benieuwd naar wat de spelregels van padel zijn? We leggen overzichtelijk uit hoe je scoort, serveert en het potje wint.",
