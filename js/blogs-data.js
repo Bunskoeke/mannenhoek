@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-zijn-de-beste-datingapps-in-2026",
+    title: "Wat zijn de beste datingapps in 2026? Dit zijn jouw winners!",
+    excerpt: "Wil je weten wat de beste datingapps in 2026 zijn? We bespreken de apps die je écht verder helpen, zonder gedoe.",
+    category: "lifestyle",
+    categoryLabel: "Lifestyle",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/wat-zijn-de-beste-datingapps-in-2026.jpg"
+  },
+  {
     slug: "beste-positie-rechtshandige-speler-padel",
     title: "Wat is de beste positie voor een rechtshandige speler met Padel?",
     excerpt: "Welke positie past het beste bij jou als rechtshandige padelspeler? Check handige tips en tactiek om meer te scoren op de baan.",
