@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-zorg-je-voor-meer-zelfvertrouwen",
+    title: "Hoe zorg je voor meer zelfvertrouwen? Een no-nonsense aanpak die werkt",
+    excerpt: "Wil je meer zelfvertrouwen? Dit is hoe je het écht voor elkaar krijgt, zonder zweverige tips of dikke praat.",
+    category: "lifestyle",
+    categoryLabel: "Lifestyle",
+    date: "2026-05-17",
+    dateFormatted: "17 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoe-zorg-je-voor-meer-zelfvertrouwen.jpg"
+  },
+  {
     slug: "wat-zijn-de-beste-datingapps-in-2026",
     title: "Wat zijn de beste datingapps in 2026? Dit zijn jouw winners!",
     excerpt: "Wil je weten wat de beste datingapps in 2026 zijn? We bespreken de apps die je écht verder helpen, zonder gedoe.",
