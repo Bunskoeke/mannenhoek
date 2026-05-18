@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "relatieproblemen-door-slaaptekort-wat-je-moet-weten",
+    title: "Relatieproblemen door slaaptekort: waarom je opstaan soms ruzie wordt",
+    excerpt: "Slaaptekort zorgt niet alleen voor een grijze blik, maar ook voor ruzie met je partner. Check waarom dat gebeurt en hoe je het voorkomt.",
+    category: "relatie",
+    categoryLabel: "Relatie",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/relatieproblemen-door-slaaptekort-wat-je-moet-weten.jpg"
+  },
+  {
     slug: "date-nights-met-een-baby-bestaat-dat-nog",
     title: "Date nights met een baby: bestaat dat nog?",
     excerpt: "Date nights met een baby lijken onmogelijk, maar met wat creativiteit en planning is het toch mogelijk om samen op te laden.",
