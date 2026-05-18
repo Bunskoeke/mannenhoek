@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "beste-eten-na-padel-wat-gooi-je-erin-als-je-honger-hebt-na-het-veld",
+    title: "Beste eten na padel: wat gooi je erin als je honger hebt na het veld",
+    excerpt: "Check hier wat het beste eten is na padel om je energie snel terug te krijgen en je spieren soepel te houden.",
+    category: "koken",
+    categoryLabel: "Koken",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/beste-eten-na-padel-wat-gooi-je-erin-als-je-honger-hebt-na-het-veld.jpg"
+  },
+  {
     slug: "beste-snacks-voor-wk-2026",
     title: "De beste snacks voor WK 2026: zo scoor je in de keuken én op de bank",
     excerpt: "Snack slim tijdens WK 2026 met deze ultieme borrelhapjes. Makkelijk, snel en bomvol smaak voor grote en kleine supporters.",
