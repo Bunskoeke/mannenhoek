@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "onze-eerlijke-meting-over-de-wahoo-kickr-core-2",
+    title: "Onze eerlijke meting over de Wahoo Kickr Core 2: is 'ie zijn prijs waard?",
+    excerpt: "We testten de Wahoo Kickr Core 2 uitgebreid en geven je een no-nonsense oordeel over prestaties, gebruiksgemak en of 'ie zijn geld waard is.",
+    category: "Tech",
+    categoryLabel: "Overig",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/onze-eerlijke-meting-over-de-wahoo-kickr-core-2.jpg"
+  },
+  {
     slug: "waarom-apart-slapen-juist-werkt-voor-je-relatie",
     title: "Waarom apart slapen juist werkt voor je relatie",
     excerpt: "Apart slapen heeft meer voordelen dan je denkt. Beter slapen, minder ruzie en zelfs betere intimiteit. Lees waarom het werkt.",
