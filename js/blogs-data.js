@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "waarom-voetbal-meer-is-dan-een-spelletje",
+    title: "Waarom voetbal zoveel meer is dan alleen een spelletje",
+    excerpt: "Voetbal is niet zomaar een spel; het raakt carrière, vriendschap en zelfs je mindset. Waarom? Dat verklap ik hier.",
+    category: "carriere",
+    categoryLabel: "Carrière",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/waarom-voetbal-meer-is-dan-een-spelletje.jpg"
+  },
+  {
     slug: "schrijf-een-random-blog-zonder-stress",
     title: "Schrijf een random blog zonder stress: zo pak je het aan",
     excerpt: "Een random blog schrijven kan simpel en leuk zijn. Tips en tricks om moeiteloos te starten en vol te houden, zonder paniek.",
