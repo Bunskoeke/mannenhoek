@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-jaargesprek",
+    title: "Hoe kun je je het best voorbereiden op een jaargesprek? Slimme tips die écht werken",
+    excerpt: "Tip: een jaargesprek overleef je en win je alleen met een goede voorbereiding. Zo pak je het aan en haal je het beste uit dat gesprek.",
+    category: "carriere",
+    categoryLabel: "Carrière",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoe-kun-je-je-het-best-voorbereiden-op-een-jaargesprek.jpg"
+  },
+  {
     slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-sollicitatiegesprek",
     title: "Hoe kun je je het best voorbereiden op een sollicitatiegesprek?",
     excerpt: "Wil je je sollicitatiegesprek rocken? Bereid je voor met deze praktische tips, zodat je zelfverzekerd en scherp overkomt.",
