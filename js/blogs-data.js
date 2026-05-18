@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-sollicitatiegesprek",
+    title: "Hoe kun je je het best voorbereiden op een sollicitatiegesprek?",
+    excerpt: "Wil je je sollicitatiegesprek rocken? Bereid je voor met deze praktische tips, zodat je zelfverzekerd en scherp overkomt.",
+    category: "carriere",
+    categoryLabel: "Carrière",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoe-kun-je-je-het-best-voorbereiden-op-een-sollicitatiegesprek.jpg"
+  },
+  {
     slug: "wat-zijn-de-beste-smartwatches-van-2026",
     title: "Wat zijn de beste smartwatches van 2026? Hier moet je op letten",
     excerpt: "Smartwatch kopen in 2026? Check deze beste modellen en tips om te kiezen uit het brede aanbod.",
