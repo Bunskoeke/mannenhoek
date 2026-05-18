@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "zelf-loaded-fries-maken-zo-pak-je-het-perfect-aan",
+    title: "Zelf loaded fries maken: zo pak je het perfect aan",
+    excerpt: "Zelf loaded fries maken is makkelijker dan je denkt. Met deze tips zet je zo een berg friet neer waar iedereen van smult.",
+    category: "koken",
+    categoryLabel: "Koken",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/zelf-loaded-fries-maken-zo-pak-je-het-perfect-aan.jpg"
+  },
+  {
     slug: "beste-eten-na-padel-wat-gooi-je-erin-als-je-honger-hebt-na-het-veld",
     title: "Beste eten na padel: wat gooi je erin als je honger hebt na het veld",
     excerpt: "Check hier wat het beste eten is na padel om je energie snel terug te krijgen en je spieren soepel te houden.",
