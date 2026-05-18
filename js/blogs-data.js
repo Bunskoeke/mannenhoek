@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-is-de-voorspelling-van-claude-ai-voor-de-wk-winnaar-2026",
+    title: "Wat is de voorspelling van Claude AI voor de WK winnaar 2026?",
+    excerpt: "Claude AI gokt op een paar favorieten voor het WK 2026. Wil je weten wie zij verwachten als kampioen? We duiken erin en leggen het uit.",
+    category: "overig",
+    categoryLabel: "Overig",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/wat-is-de-voorspelling-van-claude-ai-voor-de-wk-winnaar-2026.jpg"
+  },
+  {
     slug: "onze-eerlijke-mening-over-de-garmin-forerunner-165",
     title: "Onze eerlijke mening over de Garmin Forerunner 165: loont 'ie de moeite?",
     excerpt: "De Garmin Forerunner 165 is een slimme hardloophorloge met nuttige functies, maar is het de prijs waard? Wij zijn kritisch en eerlijk.",
