@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "beste-snacks-voor-wk-2026",
+    title: "De beste snacks voor WK 2026: zo scoor je in de keuken én op de bank",
+    excerpt: "Snack slim tijdens WK 2026 met deze ultieme borrelhapjes. Makkelijk, snel en bomvol smaak voor grote en kleine supporters.",
+    category: "koken",
+    categoryLabel: "Koken",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/beste-snacks-voor-wk-2026.jpg"
+  },
+  {
     slug: "wat-zijn-de-lekkerste-tosti-combinaties",
     title: "Wat zijn de lekkerste tosti combinaties? Probeer deze smakelijke klassiekers en verrassingen!",
     excerpt: "Welke tosti combinaties zijn écht de moeite waard? Van tijdloze klassiekers tot verrassende smaakmakers, wij zetten de beste opties voor je op een rij.",
