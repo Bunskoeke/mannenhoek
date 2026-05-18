@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-is-de-voorspelling-van-chat-gpt-voor-de-wk-winnaar-2026",
+    title: "Wat is de voorspelling van Chat GPT voor de WK Winnaar 2026?",
+    excerpt: "Wil je weten wie Chat GPT denkt dat het WK 2026 gaat winnen? Spoiler: het blijft een gok, maar de insights zijn leuk om te checken.",
+    category: "overig",
+    categoryLabel: "Overig",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/wat-is-de-voorspelling-van-chat-gpt-voor-de-wk-winnaar-2026.jpg"
+  },
+  {
     slug: "wat-is-de-voorspelling-van-claude-ai-voor-de-wk-winnaar-2026",
     title: "Wat is de voorspelling van Claude AI voor de WK winnaar 2026?",
     excerpt: "Claude AI gokt op een paar favorieten voor het WK 2026. Wil je weten wie zij verwachten als kampioen? We duiken erin en leggen het uit.",
