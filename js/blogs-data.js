@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-zijn-de-lekkerste-tosti-combinaties",
+    title: "Wat zijn de lekkerste tosti combinaties? Probeer deze smakelijke klassiekers en verrassingen!",
+    excerpt: "Welke tosti combinaties zijn écht de moeite waard? Van tijdloze klassiekers tot verrassende smaakmakers, wij zetten de beste opties voor je op een rij.",
+    category: "koken",
+    categoryLabel: "Koken",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/wat-zijn-de-lekkerste-tosti-combinaties.jpg"
+  },
+  {
     slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-jaargesprek",
     title: "Hoe kun je je het best voorbereiden op een jaargesprek? Slimme tips die écht werken",
     excerpt: "Tip: een jaargesprek overleef je en win je alleen met een goede voorbereiding. Zo pak je het aan en haal je het beste uit dat gesprek.",
