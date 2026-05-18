@@ -6,17 +6,6 @@
 
 const BLOGS_DATA = [
   {
-    slug: "waarom-voetbal-meer-is-dan-een-spelletje",
-    title: "Waarom voetbal zoveel meer is dan alleen een spelletje",
-    excerpt: "Voetbal is niet zomaar een spel; het raakt carrière, vriendschap en zelfs je mindset. Waarom? Dat verklap ik hier.",
-    category: "carriere",
-    categoryLabel: "Carrière",
-    date: "2026-05-18",
-    dateFormatted: "18 mei 2026",
-    readTime: "7 min lezen",
-    image: "/images/blog/waarom-voetbal-meer-is-dan-een-spelletje.jpg"
-  },
-  {
     slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-jaargesprek",
     title: "Hoe kun je je het best voorbereiden op een jaargesprek? Slimme tips die écht werken",
     excerpt: "Tip: een jaargesprek overleef je en win je alleen met een goede voorbereiding. Zo pak je het aan en haal je het beste uit dat gesprek.",
