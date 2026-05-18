@@ -17,39 +17,6 @@ const BLOGS_DATA = [
     image: "/images/blog/waarom-voetbal-meer-is-dan-een-spelletje.jpg"
   },
   {
-    slug: "schrijf-een-random-blog-zonder-stress",
-    title: "Schrijf een random blog zonder stress: zo pak je het aan",
-    excerpt: "Een random blog schrijven kan simpel en leuk zijn. Tips en tricks om moeiteloos te starten en vol te houden, zonder paniek.",
-    category: "carriere",
-    categoryLabel: "Carrière",
-    date: "2026-05-18",
-    dateFormatted: "18 mei 2026",
-    readTime: "7 min lezen",
-    image: "/images/blog/schrijf-een-random-blog-zonder-stress.jpg"
-  },
-  {
-    slug: "schrijf-een-random-blog-over-voetbal-impact",
-    title: "Schrijf een random blog over voetbal en ontdek waarom het zoveel impact heeft",
-    excerpt: "Voetbal gaat over meer dan een bal trappen. Het beïnvloedt ons werk, onze mindset en zelfs vriendenclubjes zonder dat je het doorhebt.",
-    category: "carriere",
-    categoryLabel: "Carrière",
-    date: "2026-05-18",
-    dateFormatted: "18 mei 2026",
-    readTime: "7 min lezen",
-    image: "/images/blog/schrijf-een-random-blog-over-voetbal-impact.jpg"
-  },
-  {
-    slug: "schrijf-een-random-blog-zonder-stress",
-    title: "Schrijf een random blog zonder stress: zo pak je het aan",
-    excerpt: "Schrijf een random blog die scoort met deze simpele, no-nonsense aanpak. Geen stress, gewoon doen en verbeteren.",
-    category: "carriere",
-    categoryLabel: "Carrière",
-    date: "2026-05-18",
-    dateFormatted: "18 mei 2026",
-    readTime: "8 min lezen",
-    image: "/images/blog/schrijf-een-random-blog-zonder-stress.jpg"
-  },
-  {
     slug: "hoe-kun-je-je-het-best-voorbereiden-op-een-jaargesprek",
     title: "Hoe kun je je het best voorbereiden op een jaargesprek? Slimme tips die écht werken",
     excerpt: "Tip: een jaargesprek overleef je en win je alleen met een goede voorbereiding. Zo pak je het aan en haal je het beste uit dat gesprek.",
