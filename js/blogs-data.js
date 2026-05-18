@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "wat-zijn-de-beste-smartwatches-van-2026",
+    title: "Wat zijn de beste smartwatches van 2026? Hier moet je op letten",
+    excerpt: "Smartwatch kopen in 2026? Check deze beste modellen en tips om te kiezen uit het brede aanbod.",
+    category: "tech",
+    categoryLabel: "Tech",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/wat-zijn-de-beste-smartwatches-van-2026.jpg"
+  },
+  {
     slug: "hoe-train-je-het-best-voor-de-nijmeegse-4-daagse",
     title: "Hoe train je het best voor de Nijmeegse 4-daagse: zo loop jij 'm uit!",
     excerpt: "Wil jij de Nijmeegse 4-daagse volbrengen zonder kramp of klachten? Ontdek hoe je het best traint om die 4 dagen vol te houden.",
