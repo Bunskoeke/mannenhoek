@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "onze-eerlijke-mening-over-de-garmin-forerunner-165",
+    title: "Onze eerlijke mening over de Garmin Forerunner 165: loont 'ie de moeite?",
+    excerpt: "De Garmin Forerunner 165 is een slimme hardloophorloge met nuttige functies, maar is het de prijs waard? Wij zijn kritisch en eerlijk.",
+    category: "Tech",
+    categoryLabel: "Overig",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/onze-eerlijke-mening-over-de-garmin-forerunner-165.jpg"
+  },
+  {
     slug: "onze-eerlijke-meting-over-de-wahoo-kickr-core-2",
     title: "Onze eerlijke meting over de Wahoo Kickr Core 2: is 'ie zijn prijs waard?",
     excerpt: "We testten de Wahoo Kickr Core 2 uitgebreid en geven je een no-nonsense oordeel over prestaties, gebruiksgemak en of 'ie zijn geld waard is.",
