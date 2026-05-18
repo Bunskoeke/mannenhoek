@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-train-je-het-best-voor-de-nijmeegse-4-daagse",
+    title: "Hoe train je het best voor de Nijmeegse 4-daagse: zo loop jij 'm uit!",
+    excerpt: "Wil jij de Nijmeegse 4-daagse volbrengen zonder kramp of klachten? Ontdek hoe je het best traint om die 4 dagen vol te houden.",
+    category: "outdoor",
+    categoryLabel: "Overig",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/hoe-train-je-het-best-voor-de-nijmeegse-4-daagse.jpg"
+  },
+  {
     slug: "hoe-zorg-je-voor-meer-zelfvertrouwen",
     title: "Hoe zorg je voor meer zelfvertrouwen? Een no-nonsense aanpak die werkt",
     excerpt: "Wil je meer zelfvertrouwen? Dit is hoe je het écht voor elkaar krijgt, zonder zweverige tips of dikke praat.",
