@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "waarom-apart-slapen-juist-werkt-voor-je-relatie",
+    title: "Waarom apart slapen juist werkt voor je relatie",
+    excerpt: "Apart slapen heeft meer voordelen dan je denkt. Beter slapen, minder ruzie en zelfs betere intimiteit. Lees waarom het werkt.",
+    category: "relatie",
+    categoryLabel: "Relatie",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/waarom-apart-slapen-juist-werkt-voor-je-relatie.jpg"
+  },
+  {
     slug: "relatieproblemen-door-slaaptekort-wat-je-moet-weten",
     title: "Relatieproblemen door slaaptekort: waarom je opstaan soms ruzie wordt",
     excerpt: "Slaaptekort zorgt niet alleen voor een grijze blik, maar ook voor ruzie met je partner. Check waarom dat gebeurt en hoe je het voorkomt.",
