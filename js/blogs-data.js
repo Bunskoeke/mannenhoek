@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "date-nights-met-een-baby-bestaat-dat-nog",
+    title: "Date nights met een baby: bestaat dat nog?",
+    excerpt: "Date nights met een baby lijken onmogelijk, maar met wat creativiteit en planning is het toch mogelijk om samen op te laden.",
+    category: "relatie",
+    categoryLabel: "Relatie",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/date-nights-met-een-baby-bestaat-dat-nog.jpg"
+  },
+  {
     slug: "hoe-verandert-een-baby-je-relatie",
     title: "Hoe verandert een baby je relatie? Spoiler: het is een achtbaan, maar dan wel samen",
     excerpt: "Een baby verandert je relatie compleet. Van romantiek tot slaapgebrek: zo houd je het samen sterk en leuk.",
