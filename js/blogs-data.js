@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-verandert-een-baby-je-relatie",
+    title: "Hoe verandert een baby je relatie? Spoiler: het is een achtbaan, maar dan wel samen",
+    excerpt: "Een baby verandert je relatie compleet. Van romantiek tot slaapgebrek: zo houd je het samen sterk en leuk.",
+    category: "relatie",
+    categoryLabel: "Relatie",
+    date: "2026-05-18",
+    dateFormatted: "18 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoe-verandert-een-baby-je-relatie.jpg"
+  },
+  {
     slug: "zelf-loaded-fries-maken-zo-pak-je-het-perfect-aan",
     title: "Zelf loaded fries maken: zo pak je het perfect aan",
     excerpt: "Zelf loaded fries maken is makkelijker dan je denkt. Met deze tips zet je zo een berg friet neer waar iedereen van smult.",
