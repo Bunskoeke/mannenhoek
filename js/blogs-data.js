@@ -28,17 +28,6 @@ const BLOGS_DATA = [
     image: "/images/blog/welke-kleding-trek-je-aan-bij-padel.jpg"
   },
   {
-    slug: "welke-kleding-trek-je-aan-bij-padel",
-    title: "Welke kleding trek je aan bij Padel? Zo zit je altijd goed",
-    excerpt: "Weet je niet wat je aan moet trekken bij padel? Hier lees je precies welke kleding het beste werkt voor optimale prestaties en comfort.",
-    category: "sporten",
-    categoryLabel: "Sporten",
-    date: "2026-05-19",
-    dateFormatted: "19 mei 2026",
-    readTime: "7 min lezen",
-    image: "/images/blog/welke-kleding-trek-je-aan-bij-padel.jpg"
-  },
-  {
     slug: "moet-je-voor-een-hard-of-zacht-padelracket-kiezen",
     title: "Moet je voor een hard of zacht padelracket kiezen? Zo vind je jouw perfecte racket",
     excerpt: "Hard of zacht padelracket? Leer wat het verschil is en welk racket bij jou past zodat je het beste uit je padelspel haalt.",
@@ -229,8 +218,8 @@ const BLOGS_DATA = [
     slug: "hoe-train-je-het-best-voor-de-nijmeegse-4-daagse",
     title: "Hoe train je het best voor de Nijmeegse 4-daagse: zo loop jij 'm uit!",
     excerpt: "Wil jij de Nijmeegse 4-daagse volbrengen zonder kramp of klachten? Ontdek hoe je het best traint om die 4 dagen vol te houden.",
-    category: "outdoor",
-    categoryLabel: "Overig",
+    category: "sporten",
+    categoryLabel: "Sporten",
     date: "2026-05-18",
     dateFormatted: "18 mei 2026",
     readTime: "8 min lezen",
