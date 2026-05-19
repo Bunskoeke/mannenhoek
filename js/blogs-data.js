@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoeveel-calorieen-verbrand-je-met-padel",
+    title: "Hoeveel calorieën verbrand je met padel? Alles wat je moet weten",
+    excerpt: "Benieuwd hoeveel calorieën je verbrandt met padel? Je leest hier de feiten en tips om padel nóg effectiever te maken.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoeveel-calorieen-verbrand-je-met-padel.jpg"
+  },
+  {
     slug: "welke-kleding-trek-je-aan-bij-padel",
     title: "Welke kleding trek je aan bij Padel? Zo kom je goed voor de dag (en het veld)",
     excerpt: "Welke kleding trek je aan bij padel? Comfort en bewegingsvrijheid zijn key, maar er is meer. Hier lees je hoe je met je gear scoort.",
