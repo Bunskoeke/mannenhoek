@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "moet-je-voor-een-hard-of-zacht-padelracket-kiezen",
+    title: "Moet je voor een hard of zacht padelracket kiezen? Zo vind je jouw perfecte racket",
+    excerpt: "Hard of zacht padelracket? Leer wat het verschil is en welk racket bij jou past zodat je het beste uit je padelspel haalt.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/moet-je-voor-een-hard-of-zacht-padelracket-kiezen.jpg"
+  },
+  {
     slug: "hoe-maak-je-zelf-pasta",
     title: "Hoe maak je zelf pasta? Simpel, lekker en stiekem best cool",
     excerpt: "Zelf pasta maken klinkt als een klus, maar is eigenlijk best makkelijk. Hier een no-nonsense aanpak om verse pasta te maken die iedereen kan.",
