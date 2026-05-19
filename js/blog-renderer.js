@@ -46,7 +46,7 @@ function blogCardHTML(blog, featured) {
       .replace(/"/g, '&quot;');
   };
   return '<article class="post-card' + (featured ? ' post-card--featured' : '') + '">' +
-    '<a href="' + p + 'blog/' + e(blog.slug) + '.html">' +
+    '<a href="' + p + 'blog/' + e(blog.slug) + '">' +
       '<img class="post-card__img" src="' + e(blog.image) + '" alt="' + e(blog.title) + '" loading="lazy">' +
       '<div class="post-card__body">' +
         '<p class="post-card__cat">' + e(blog.categoryLabel) + '</p>' +
