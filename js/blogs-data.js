@@ -14,7 +14,7 @@ const BLOGS_DATA = [
     date: "2026-05-19",
     dateFormatted: "19 mei 2026",
     readTime: "7 min lezen",
-    image: "/images/blog/de-10-meest-gestelde-vragen-over-marijn-kuipers-beantwoord.jpg"
+    image: "/images/blog/de-10-meest-gestelde-vragen-over-marijn-kuipers-beantwoord.png"
   },
   {
     slug: "waarom-krijg-je-armklachten-van-padel",
