@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "waarom-krijg-je-armklachten-van-padel",
+    title: "Waarom krijg je armklachten van padel? En hoe voorkom je die ellende!",
+    excerpt: "Armklachten van padel zijn frustrerend maar vaak goed te voorkomen. Lees waarom het gebeurt en wat je kunt doen tegen die pijnlijke armen.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/waarom-krijg-je-armklachten-van-padel.jpg"
+  },
+  {
     slug: "hoeveel-calorieen-verbrand-je-met-padel",
     title: "Hoeveel calorieën verbrand je met padel? Alles wat je moet weten",
     excerpt: "Benieuwd hoeveel calorieën je verbrandt met padel? Je leest hier de feiten en tips om padel nóg effectiever te maken.",
