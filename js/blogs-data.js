@@ -7,6 +7,17 @@
 const BLOGS_DATA = [
   {
     slug: "welke-kleding-trek-je-aan-bij-padel",
+    title: "Welke kleding trek je aan bij Padel? Zo kom je goed voor de dag (en het veld)",
+    excerpt: "Welke kleding trek je aan bij padel? Comfort en bewegingsvrijheid zijn key, maar er is meer. Hier lees je hoe je met je gear scoort.",
+    category: "sporten",
+    categoryLabel: "Sporten",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "8 min lezen",
+    image: "/images/blog/welke-kleding-trek-je-aan-bij-padel.jpg"
+  },
+  {
+    slug: "welke-kleding-trek-je-aan-bij-padel",
     title: "Welke kleding trek je aan bij Padel? Zo zit je altijd goed",
     excerpt: "Weet je niet wat je aan moet trekken bij padel? Hier lees je precies welke kleding het beste werkt voor optimale prestaties en comfort.",
     category: "sporten",
