@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "hoe-maak-je-zelf-pasta",
+    title: "Hoe maak je zelf pasta? Simpel, lekker en stiekem best cool",
+    excerpt: "Zelf pasta maken klinkt als een klus, maar is eigenlijk best makkelijk. Hier een no-nonsense aanpak om verse pasta te maken die iedereen kan.",
+    category: "koken",
+    categoryLabel: "Koken",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/hoe-maak-je-zelf-pasta.jpg"
+  },
+  {
     slug: "wat-is-de-voorspelling-van-chat-gpt-voor-de-wk-winnaar-2026",
     title: "Wat is de voorspelling van Chat GPT voor de WK Winnaar 2026?",
     excerpt: "Wil je weten wie Chat GPT denkt dat het WK 2026 gaat winnen? Spoiler: het blijft een gok, maar de insights zijn leuk om te checken.",
