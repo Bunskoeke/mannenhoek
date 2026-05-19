@@ -6,28 +6,6 @@
 
 const BLOGS_DATA = [
   {
-    slug: "zo-kies-je-de-beste-smartwatch-van-2026-zonder-gedoe",
-    title: "Zo kies je de beste smartwatch van 2026 zonder gedoe",
-    excerpt: "Een goede smartwatch kopen in 2026? Hier lees je hoe je een model kiest waar je echt blij van wordt, zonder gedoe en zonder onzin.",
-    category: "sporten",
-    categoryLabel: "Sporten",
-    date: "2026-05-19",
-    dateFormatted: "19 mei 2026",
-    readTime: "8 min lezen",
-    image: "/images/blog/zo-kies-je-de-beste-smartwatch-van-2026-zonder-gedoe.jpg"
-  },
-  {
-    slug: "zo-haal-je-het-maximale-uit-een-sollicitatiegesprek",
-    title: "Zo haal je het maximale uit een sollicitatiegesprek: tips waar je écht wat aan hebt",
-    excerpt: "Met deze slimme tips maak je elke sollicitatie gesprekswaardig. Van voorbereiding tot gesprek, zo pak je het aan om te scoren.",
-    category: "koken",
-    categoryLabel: "Koken",
-    date: "2026-05-19",
-    dateFormatted: "19 mei 2026",
-    readTime: "8 min lezen",
-    image: "/images/blog/zo-haal-je-het-maximale-uit-een-sollicitatiegesprek.jpg"
-  },
-  {
     slug: "wat-is-de-voorspelling-van-chat-gpt-voor-de-wk-winnaar-2026",
     title: "Wat is de voorspelling van Chat GPT voor de WK Winnaar 2026?",
     excerpt: "Wil je weten wie Chat GPT denkt dat het WK 2026 gaat winnen? Spoiler: het blijft een gok, maar de insights zijn leuk om te checken.",
