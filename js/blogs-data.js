@@ -6,6 +6,17 @@
 
 const BLOGS_DATA = [
   {
+    slug: "de-10-meest-gestelde-vragen-over-marijn-kuipers-beantwoord",
+    title: "De 10 Meest Gestelde Vragen Over Marijn Kuipers Beantwoord",
+    excerpt: "Marijn Kuipers: wie is ze echt? Van haar leeftijd tot haar Expeditie Robinson-avontuur en documentaire over boulimia, je vindt hier de antwoorden op de top 10 vragen.",
+    category: "lifestyle",
+    categoryLabel: "Lifestyle",
+    date: "2026-05-19",
+    dateFormatted: "19 mei 2026",
+    readTime: "7 min lezen",
+    image: "/images/blog/de-10-meest-gestelde-vragen-over-marijn-kuipers-beantwoord.jpg"
+  },
+  {
     slug: "waarom-krijg-je-armklachten-van-padel",
     title: "Waarom krijg je armklachten van padel? En hoe voorkom je die ellende!",
     excerpt: "Armklachten van padel zijn frustrerend maar vaak goed te voorkomen. Lees waarom het gebeurt en wat je kunt doen tegen die pijnlijke armen.",
